@@ -24,6 +24,10 @@ body {
       width: 100%;
     }
   }
+
+  .swiper-pagination-bullet {
+    background-color: #fff;
+  }
 }
 
 .nav-bar {
@@ -202,14 +206,14 @@ body {
 
   .swiper-slide-text {
     position: absolute;
-    top: 182px;
+    top: 40px;
     left: 209px;
-    max-width: 710px;
 
     .text-container  {
       color: #fff;
       flex-direction: column;
-      gap: 10px;
+      gap: 20px;
+      max-width: 710px;
       h1 {
         font-size: 80px;
         font-weight: bold;
@@ -217,7 +221,8 @@ body {
 
       .order-tracking-cta {
         text-decoration: none;
-        padding: 26px 84px;
+        padding: 26px 40px;
+        max-width: 212px;
         background: #EF294C;
         color: #fff;
         border-radius: 10px;
@@ -227,5 +232,73 @@ body {
         color: #fff;
       }
     }
+  }
+}
+
+.swiper-slide-input{
+  max-width: 212px;
+  position: relative;
+  input {
+    padding: 22px 48px;
+    border-radius: 40px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #EE3A43;
+    border-radius: 40px;
+    padding: 20px 40px;
+    position: absolute;
+    left: 188px;
+    top: 0;
+  }
+}
+
+
+.swiper-slide-discount {
+  max-width: 190px;
+
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width:992px) {
+  .swiper-slide {
+    height: 100%;
+
+    .slider-img {
+      object-fit: cover;
+      height: 100vh;
+    }
+
+    .swiper-slide-text {
+      left: 223px;
+      top: 100px;
+      flex-direction: column;
+      text-align: center;
+      margin-inline: auto;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      .text-container {
+        max-width: 100%;
+
+        h1 {
+          font-size: 40px;
+        }
+
+        .order-tracking-cta {
+          margin-inline: auto;
+        }
+      }
+    }
+  }
+
+  .swiper-slide-input {
+    max-width: 100%;
+    margin-inline: auto;
   }
 }
